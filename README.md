@@ -1,9 +1,28 @@
+# Sorting Algorithm Visualizer
+
+A simple project to Visualize sorting algorithms using React.
+Currently supported algorithms:
+ - Bubble Sort
+ - Insertion Sort
+ 
+ 
+Planned Features:
+
+- Support for quicksort, mergesort, and selection sort
+- Add highlighting for bar currently being analysed
+
+To see it in action:
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `yarn install`
 ### `yarn start`
 
 Runs the app in the development mode.<br />
