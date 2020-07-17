@@ -1,3 +1,5 @@
+# Sorting Algorithm Visualizer
+
 A simple project to Visualize sorting algorithms using React.
 Currently supported algorithms:
  - Bubble Sort
