@@ -13,7 +13,8 @@ Planned Features:
 
 To see it in action:
 
-
+![Sorting Algorithm in Progress](https://github.com/Camc314/Sorting-Algorithm-Visualizer/blob/master/2020-07-17-sortingAlgoGif.gif)
+This is demonstraiting Bubblesort
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
