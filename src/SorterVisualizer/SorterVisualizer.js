@@ -52,6 +52,7 @@ class SorterVisualizer extends Component {
                 break;
             case 'heap':
                 this.runHeapSort();
+                break;
             default:
                 break;
         }
@@ -168,7 +169,7 @@ class SorterVisualizer extends Component {
                 <div>
                     <h4>Sorting Algorithm Visualizer</h4>
                     <p>This is a personal project to built an app to visualize sorting algorithms such as quick sort, merge sort, bubble sort and more.</p>
-                    <p>The project is built on React, and utilizes JavaScript algorithms to visualize the sorting methods. To see my other work, check out my GitHub <a href="https://github.com/camc314" target="_blank">here.</a></p>
+                    <p>The project is built on React, and utilizes JavaScript algorithms to visualize the sorting methods. To see my other work, check out my GitHub <a href="https://github.com/camc314" target="_blank" rel="noopener noreferrer">here.</a></p>
                 </div>
             </div>
         )
@@ -203,35 +204,6 @@ const setInitialValues = (numberOfPoints) => {
     //const row = [99, 1, 98, 2, 97, 3, 96, 4, 95, 5];
     console.log(row);
     return row;
-}
-
-/**
- * Checks that if both arrays are equal
- * @param {array} array1 
- * @param {array} array2 
- * @return {boolean} True if both arrays are equal
- */
-function checkEqualArrays(array1, array2) {
-    if (array1.length !== array2.length) {
-        return false;
-    }
-    for (let i = 0; i < array1.length; i++) {
-        if (array1[i] !== array2[i]) {
-            return false;
-        }
-    }
-    return true;
-}
-
-/**
- * Generates a random integer from interval
- * @param {int} min 
- * @param {int} max 
- * @returns {int} random integer from the specified interval
- */
-function randomIntFromInterval(min, max) {
-    // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 export default SorterVisualizer;
