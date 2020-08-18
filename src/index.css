@@ -23,6 +23,7 @@ code {
   width: 90%;
   min-width: 35em;
   margin: 2em auto auto auto;
+  padding-top: 1em;
   overflow: hidden;
 }
 
@@ -30,7 +31,7 @@ code {
   width: 0.5em;
   background-color: black;
   border: 1px solid white;
-  border-radius: 0.1em;
+  border-radius: 0.1em 1em 0.1em 0.1em;
 }
 
 .isActive {
@@ -48,7 +49,6 @@ code {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px; /* demo only */
 }
 
 .customDropdown select {
@@ -56,9 +56,9 @@ code {
   color: rgb(0, 153, 255);
   border: 1px solid rgb(0, 153, 255);
   padding: 1em;
-  margin: 0;
+  margin: 1em;
   width: 12em;
-  height: 4em;
+  height: 5em;
   border-radius: 0.7em;
   text-indent: 0.01px;
   text-overflow: '';
@@ -83,7 +83,7 @@ code {
 button {
     padding: 1em;
     width: 6em;
-    height: 4em;
+    height: 5em;
     margin: 1em;
     border: 1px solid rgb(0, 153, 255);
     color: rgb(0, 153, 255);
@@ -102,10 +102,15 @@ button:focus {
     outline: none;
 }
 
+button:disabled {
+    border-color: #cacaca;
+    color: #cacaca;
+}
+
 .inputCont {
-    margin: 0em 1em;
-    height: 4em;
-    padding: 0em 1em;
+    margin: 1em 1em;
+    max-height: 5em;
+    padding: 1em;
     width: 8em;
     border: 1px solid rgb(0, 153, 255);
     color: rgb(0, 153, 255);
@@ -125,4 +130,8 @@ button:focus {
 
 .inputCont input {
     width: 4em;
+}
+
+.array-bar {
+    border-radius: 0.4em 0.4em 0.1em 0.1em;
 }
