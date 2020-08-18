@@ -34,7 +34,7 @@ class SorterVisualizer extends Component {
     }
 
     runSort = () => {
-        switch(this.state.sortMethod) {
+        switch (this.state.sortMethod) {
             case 'bubble':
                 this.runBubbleSort();
                 break;
@@ -103,29 +103,41 @@ class SorterVisualizer extends Component {
         return (
             <div>
                 <div className="optionsContainer">
+
+                    <button onClick={this.runSort}>Start</button>
+                    <button onClick={this.runSort}>Stop</button>
+                    <button title="" id="newArray" style={{}} onClick={() => this.generateNewArray()}>Shuffle</button>
+
+
                     <span className="customDropdown">
-                        <select  id="algorithm" name="algorithm" value={this.state.value}
+                        <select id="algorithm" name="algorithm" value={this.state.value}
                             onChange={this.handleChange} >
                             <option value="bubble">Bubble Sort</option>
                             <option value="insertion">Insertion Sort</option>
                         </select>
-                        
+
                     </span>
 
-                    <button title="" id="newArray" style={{}} onClick={() => this.generateNewArray()}>Generate a New Array</button>
+                    <div class="inputCont">
+                        <span>Amount</span>
+                        <input id="numberPoints" type="number" value="100" />
+                    </div>
 
-                    <button onClick={this.runSort}>Click Me</button>
-
-                    <h3>Array Accesses: {this.state.arrayAccess}</h3>
+                    <div class="inputCont">
+                        <span>Speed</span>
+                        <input type="number" value="100" />
+                    </div>
 
                 </div>
+                <h3>Array Accesses: {this.state.arrayAccess}</h3>
+
                 <div className="graphContainer" style={{ display: 'flex', alignItems: 'flex-end' }}>
                     {array.map((value, idx) => (
                         <div
                             className="array-bar"
                             key={idx}
                             style={{
-                                backgroundColor: PRIMARY_COLOR,
+                                backgroundColor: colorMap(value, 169, 204),
                                 height: `${value * 4}px`,
                                 width: `${100 / NUMBER_OF_POINTS}%`
                             }}
@@ -135,6 +147,14 @@ class SorterVisualizer extends Component {
             </div>
         )
     }
+}
+
+const colorMap = (percent, start, end) => {
+    const a = percent / 100;
+    const b = (end - start) * a;
+    const c = (b + start);
+    return `hsl(${c}, 100%, 50%)`
+
 }
 
 const setInitialValues = () => {

@@ -17,9 +17,9 @@ code {
 .graphContainer {
   display: flex;
   align-items: flex-end;
-  background-color: #d8d8d8;
-  box-shadow: 0 0 10px;
-  border-radius: 0.5em;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 30px #0000008c;
+  border-radius: 0.7em;
   width: 90%;
   min-width: 35em;
   margin: 2em auto auto auto;
@@ -37,6 +37,12 @@ code {
   background: red;
 }
 
+.optionsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .customDropdown {
   position: relative;
@@ -46,14 +52,14 @@ code {
 }
 
 .customDropdown select {
-  background-color: #1abc9c;
-  color: #fff;
-  font-size: inherit;
-  padding: .5em;
-  padding-right: 2.5em;	
-  border: 0;
+  background-color: #ffffff00;
+  color: rgb(0, 153, 255);
+  border: 1px solid rgb(0, 153, 255);
+  padding: 1em;
   margin: 0;
-  border-radius: 3px;
+  width: 12em;
+  height: 4em;
+  border-radius: 0.7em;
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button; /* hide default arrow in chrome OSX */
@@ -73,3 +79,50 @@ code {
   color: rgba(0,0,0,.1);
 }
 
+
+button {
+    padding: 1em;
+    width: 6em;
+    height: 4em;
+    margin: 1em;
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    background-color: #ffffff00;
+    border-radius: 0.7em;
+    transition: all 0.25s;
+}
+
+button:hover {
+    background-color: rgb(0, 153, 255);
+    /* border-color: #ffffffff; */
+    color: #ffffffff;
+}
+
+button:focus {
+    outline: none;
+}
+
+.inputCont {
+    margin: 0em 1em;
+    height: 4em;
+    padding: 0em 1em;
+    width: 8em;
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    background-color: #ffffff00;
+    border-radius: 0.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0;
+}
+
+.inputCont span {
+    height: fit-content;
+    margin-right: 1em;
+}
+
+.inputCont input {
+    width: 4em;
+}
