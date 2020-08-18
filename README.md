@@ -1,6 +1,6 @@
 # Sorting Algorithm Visualizer
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d17fdcfa-620b-4f1e-9dc0-df24f8c61c0b/deploy-status)](https://app.netlify.com/sites/awesome-wing-f04125/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d17fdcfa-620b-4f1e-9dc0-df24f8c61c0b/deploy-status)](https://awesome-wing-f04125.netlify.app/)
 
 A simple project to Visualize sorting algorithms using React.
 Currently supported algorithms:
