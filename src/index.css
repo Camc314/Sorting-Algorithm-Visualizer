@@ -25,6 +25,7 @@ code {
   margin: 2em auto auto auto;
   padding-top: 1em;
   overflow: hidden;
+  max-width: 100em;
 }
 
 .graphBar {
@@ -123,6 +124,9 @@ button:disabled {
     margin-right: 0;
 }
 
+.header {
+    color: rgb(0, 153, 255);
+}
 .inputCont span {
     height: fit-content;
     margin-right: 1em;

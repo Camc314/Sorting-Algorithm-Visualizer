@@ -118,6 +118,9 @@ class SorterVisualizer extends Component {
 
         return (
             <div>
+                <div class="header">
+                    <h1>Sorting Algorithm Visualizer</h1>
+                </div>
                 <div className="optionsContainer">
 
                     <button disabled={this.state.running} onClick={this.runSort}>Start</button>
