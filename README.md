@@ -15,7 +15,7 @@ Planned Features:
 
 To see it in action:
 
-![Sorting Algorithm in Progress](https://github.com/Camc314/Sorting-Algorithm-Visualizer/blob/master/2020-08-18-readme-picture)
+![Sorting Algorithm in Progress](https://github.com/Camc314/Sorting-Algorithm-Visualizer/blob/master/2020-08-18-readme-picture.png)
 This is demonstraiting Bubblesort
 
 
